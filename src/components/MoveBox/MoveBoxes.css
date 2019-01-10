@@ -1,0 +1,46 @@
+.Move{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  min-height: 50px;
+  height: auto;
+  border: 1px solid #6a728c;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px grey;
+  background-color: #f1f3ff;
+  margin-top: 10px;
+  z-index: 0;
+}
+.Move:hover{
+  background-color: #797e9f;
+}
+.Dragging {
+  box-shadow: 5px 5px 4px grey;
+
+}
+
+.Pool {
+  display: flex;
+  flex-flow: column;
+  width: 210px;
+  height: auto;
+  padding: 6px;
+  border-left: 2px solid black;
+  margin-left: 10px;
+}
+
+
+.Mv::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: -9px;
+  bottom: 50%;
+  width: 8px;
+  border: 2px solid #000;
+  border-top: 0 none transparent;
+  border-right: 0 none transparent;
+}
